@@ -1,0 +1,79 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Светлый фон */
+    margin: 0;
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px; /* Максимальная ширина контента */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Светло-серая рамка */
+    border-radius: 5px;
+    background-color: #ffffff; /* Белый фон для контента */
+    padding-left: 50px; /* Отступ слева */
+    padding-right: 50px; /* Отступ справа */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8e44ad; /* Цвет текста заголовка */
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center; /* Выравнивание по левому краю */
+    margin-top: 5px; /* Отступ сверху для отделения от верхней строки */
+}
+
+h1 {
+    color: #8e44ad; /* Темно-синий цвет заголовка */
+    text-align: center;
+}
+
+h2 {
+    color: #8e44ad; /* Фиолетовый цвет для заголовков разделов */
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+h3 {
+    color: #2c3e50; /* Фиолетовый цвет для заголовков тем */
+    margin-top: 15px; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    margin-left: 20px;
+}
+
+a {
+    color: #3498db; /* Голубой цвет для ссылок */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    color: #053454;
+}
+
+/* Стили для списка */
+ul {
+    padding-left: 20px; /* Отступ для списка */
+}
+
+li {
+    margin-bottom: 15px; /* Отступ между пунктами списка */
+}
+
+/* Стили для лабораторных работ */
+.lab-work {
+    margin-left: 50px; /* Отступ для лабораторных работ */
+    font-style: italic; /* Курсив для лабораторных работ */
+}

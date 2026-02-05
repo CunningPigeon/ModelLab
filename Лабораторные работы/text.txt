@@ -1,0 +1,24 @@
+Выделение жирным
+<p class="p_heading">Упражнение 1</p>
+
+Вывод изображения в строку
+<div class="container_images_rows">
+<img src="/lb/laba_3/images/image_2.jpg" class="glow openModal" id="openModal"
+data-model="lb_3/LB03_miss01.glb">
+<img src="/lb/laba_4/images/image_13.jpg" class="glow openModal" id="openModal"
+data-model="lb_4/LB04_miss01.glb">
+</div>
+
+Вывод изображения в столбец, в 2 строки
+<div class="container_images_columns"> <!--- В столбец --->
+  <div class="container_images_rows"> <!--- 1 строка --->
+    <img src="/lb/laba_4/images/image_17.jpg">
+    <img src="/lb/laba_4/images/image_17.1.jpg">
+  </div>
+  <div class="container_images_rows"> <!--- 2 строка --->
+    <img src="/lb/laba_4/images/image_17.2.jpg">
+    <img src="/lb/laba_4/images/image_17.3.jpg">
+  </div>
+</div>
+Вывод текста под изображение
+<p class="figure">Рисунок 17</p>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+    <link rel="stylesheet" href="/css/laba.css">
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+
+<body>
+    <script src="js/script.js" type="module"></script>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <span class="left-header">Обработка трехмерных графических изображений</span>
+                <span class="right-header">2.2 Редактор материалов, имитация внешней среды</span>
+            </div>
+            <div class="header-bottom">
+                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-content" id="text-content">
+                <h1>Лабораторная работа №15</h1>
+                <h2 class="topic">Изучение методов комбинации текстур на объекте</h2>
+
+                <h3>Цель:</h3>
+                <ol>
+                    <li>Научить использовать текстурные картыв</li>
+                </ol>
+
+                <h3>Ход работы</h3>
+
+                <div class="container_images_rows">
+                    <img src="/lb/laba_13/images/image_1.jpg">
+                </div>
+                <p class="figure">Рисунок 1</p>
+
+                <p class="p_heading">Контрольные вопросы</p>
+                <ol>
+                    <li>Карта смещений – это?</li>
+                    <li>Можно ли добавить текстуру без предварительного добавления Материала?</li>
+                    <li>Как можно использовать изображения в качестве Текстур?</li>
+                    <li>Как можно использовать видео в качестве Текстур?</li>
+
+                </ol>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="page-info-container">
+                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="container">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
+    </div>
+</body>
+
+</html>

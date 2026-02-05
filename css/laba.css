@@ -1,0 +1,157 @@
+/* 
+
+.text-content {
+    margin-bottom: 40px;
+}
+ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8e44ad; /* Цвет текста заголовка */
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center; /* Выравнивание по левому краю */
+    margin-top: 5px; /* Отступ сверху для отделения от верхней строки */
+}
+
+.toc-link {
+    color: #8e44ad; /* Цвет ссылки на содержание */
+    text-decoration: underline;
+    margin: 0; /* Убираем отступы */
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.p_heading {
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+}
+.topic {
+    color: #8e44ad;
+    text-align: center;
+    margin: 0;
+}
+
+.text-content {
+    margin-bottom: 40px;
+    margin: 0;
+    text-align: justify;
+    text-indent: 2em; /* Добавляем табуляцию в начале абзаца */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+ol, ul {
+    margin: 0;
+}
+li {
+    text-indent: 0em;
+
+ }
+.nav-button:hover {
+    background-color: darkviolet;
+}
+
+.page-info-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#page-input {
+    width: 50px; /* Подберите размер под текст общего количества страниц */
+    padding: 5px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.figure{
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрирование по горизонтали */
+    font-weight: bold;
+    color: #8e44ad;
+    margin: 10px;
+}
+.container_images_rows {
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    margin: 10px; /* Убираем отступы */
+}
+.container_images_column {
+    display: flex; /* Используем Flexbox*/
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    flex-direction: column;
+    margin: 10px; /* Убираем отступы */
+}
+
+img {
+    max-width: 50%; /* Ограничиваем максимальную ширину */
+    height: auto; /* Сохраняем пропорции */
+}
+
+/* .glow {
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+    cursor: pointer;
+}
+.glow:hover {
+    box-shadow: 0 0 20px rgba(137, 137, 2, 0.8);
+} */
+
+.glow {
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px #8e44ad;
+}
+.glow:hover {
+    box-shadow: 0 0 30px darkviolet;
+}
+
+/* Стиль модального окна*/

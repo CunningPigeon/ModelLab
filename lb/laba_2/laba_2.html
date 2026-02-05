@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+    <link rel="stylesheet" href="/css/laba.css">
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+
+<body>
+    <script src="js/script.js" type="module"></script>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <span class="left-header">Обработка трехмерных графических изображений</span>
+                <span class="right-header">1.2 Создание и преобразование объектов</span>
+            </div>
+            <div class="header-bottom">
+                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-content" id="text-content">
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="page-info-container">
+                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div id="container">
+            </div>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
+    </div>
+</body>
+</html>
