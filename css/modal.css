@@ -16,13 +16,19 @@ body {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 2% auto; /* 15% сверху и центрирование */
+    margin: 2% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 60%; /* Ширина модального окна */
-    /*height: 80%; /* Ширина модального окна */
+    width: 60%;
+    height: 80vh;              /* 🔥 ВАЖНО */
+    position: relative;
+    overflow: hidden;          /* 🔥 ВАЖНО */
 }
 
+#container {
+    width: 100%;
+    height: 100%;
+}
 .close {
     color: #aaa;
     float: right;
