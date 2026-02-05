@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">1.3 Моделирование сцены</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -36,14 +45,14 @@
                 <h3>Ход работы</h3>
                 <p>В Blender модификаторы были реорганизованны и перемещены в отдельный раздел Окна Свойств.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_1.jpg">
+                    <img src="lb/laba_6/images/image_1.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
                 <p>В зависимости от типа выделенного объекта список доступных модификаторов может меняться.</p>
                 <p>Для базовых мешей вид раздела Modifiers будет таким</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_2.jpg">
+                    <img src="lb/laba_6/images/image_2.jpg">
                 </div>
                 <p class="figure">Рисунок 2</p>
 
@@ -55,7 +64,7 @@
                     (например, Empty), вы можете скручивать и масштабировать массив объектов.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_3.jpg">
+                    <img src="lb/laba_6/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
                 <p>Пока вы не нажали кнопку "Apply" у вас есть возможность менять параметры модификатора. После нажатия
@@ -67,7 +76,7 @@
                     несколько параметров для настройки</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_4.jpg">
+                    <img src="lb/laba_6/images/image_4.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
                 <p><i>Boolean</i></p>
@@ -77,7 +86,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_5.jpg">
+                    <img src="lb/laba_6/images/image_5.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
 
@@ -93,7 +102,7 @@
                     Редактирования. Вот какие результаты получились:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_6.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_6/images/image_6.jpg" class="glow openModal" id="openModal"
                 data-model="3dmodel/lb_6/LB06_miss01.glb">
                 </div>
                 <p class="figure">Рисунок 6</p>
@@ -102,7 +111,7 @@
                 <p>Создайте модель колбы.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_7.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_6/images/image_7.jpg" class="glow openModal" id="openModal"
                 data-model="3dmodel/lb_6/LB06_miss02.glb">
                 </div>
                 <p class="figure">Рисунок 7</p>
@@ -155,7 +164,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_8.jpg">
+                    <img src="lb/laba_6/images/image_8.jpg">
                 </div>
                 <p class="figure">Рисунок 8</p>
                 <p>Модификатор Build создает отличный эффект для появления или построения объекта в анимации.</p>
@@ -167,7 +176,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_9.jpg">
+                    <img src="lb/laba_6/images/image_9.jpg">
                 </div>
                 <p class="figure">Рисунок 9</p>
 
@@ -182,7 +191,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_10.jpg">
+                    <img src="lb/laba_6/images/image_10.jpg">
                 </div>
                 <p class="figure">Рисунок 10</p>
 
@@ -201,8 +210,8 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_11.jpg">
-                    <img src="/lb/laba_6/images/image_11.1.jpg">
+                    <img src="lb/laba_6/images/image_11.jpg">
+                    <img src="lb/laba_6/images/image_11.1.jpg">
                 </div>
                 <p class="figure">Рисунок 11</p>
                 <p><strong>Mirror (Зеркало)</strong></p>
@@ -215,14 +224,14 @@
                     происходить отражение. После завершения моделирования нажмите кнопку "Apply" для получения полного
                     меша объекта.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_12.jpg">
+                    <img src="lb/laba_6/images/image_12.jpg">
                 </div>
                 <p class="figure">Рисунок 12</p>
 
                 <p class="p_heading">Упражнение 3.</p>
                 <p>В качестве практической работы создадим модель гантели.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_13.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_6/images/image_13.jpg" class="glow openModal" id="openModal"
                 data-model="3dmodel/lb_6/LB06_miss03.glb">
                 </div>
                 <p class="figure">Рисунок 13</p>
@@ -246,7 +255,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_14.jpg">
+                    <img src="lb/laba_6/images/image_14.jpg">
                 </div>
                 <p class="figure">Рисунок 14</p>
                 <p>Теперь переключимся в режим редактирования. Перед тем как добавлять сферу создадим группу для ее
@@ -278,7 +287,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_15.jpg">
+                    <img src="lb/laba_6/images/image_15.jpg">
                 </div>
                 <p class="figure">Рисунок 15</p>
                 <p>Также здесь вы можете выбрать:</p>
@@ -296,7 +305,7 @@
                     не будет "толщины".</p>
                 <p>Модификатор Solidify позволит создать некоторую толщину стенок для вашего объекта.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_16.jpg">
+                    <img src="lb/laba_6/images/image_16.jpg">
                 </div>
                 <p class="figure">Рисунок 16</p>
                 <p>Subdivision Surface (Подразделение)</p>
@@ -309,7 +318,7 @@
                 <p>Это может значительно замедлить работу программы.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_17.jpg">
+                    <img src="lb/laba_6/images/image_17.jpg">
                 </div>
                 <p class="figure">Рисунок 17</p>
                 <p class="p_heading">Модификаторы Деформации (Deform Modifiers)</p>
@@ -322,7 +331,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_18.jpg">
+                    <img src="lb/laba_6/images/image_18.jpg">
                 </div>
                 <p class="figure">Рисунок 18</p>
                 <p>Cast</p>
@@ -331,7 +340,7 @@
                     эффекта убедитесь что объект имеет достаточное количество вершин.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_19.jpg">
+                    <img src="lb/laba_6/images/image_19.jpg">
                 </div>
                 <p class="figure">Рисунок 19</p>
 
@@ -342,7 +351,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_20.jpg">
+                    <img src="lb/laba_6/images/image_20.jpg">
                 </div>
                 <p class="figure">Рисунок 20</p>
 
@@ -352,7 +361,7 @@
                     текстуру и используйте ее с модификатором Displace. Приведен пример с Кубом.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_21.jpg">
+                    <img src="lb/laba_6/images/image_21.jpg">
                 </div>
                 <p class="figure">Рисунок 21</p>
 
@@ -363,7 +372,7 @@
                     перерасчета положения вершин или центральной точки объекта для улучшения взаимодействия.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_22.jpg">
+                    <img src="lb/laba_6/images/image_22.jpg">
                 </div>
                 <p class="figure">Рисунок 22</p>
 
@@ -375,7 +384,7 @@
                     компьютер может замедлять свою работу при нажатой кнопке " Bind ".</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_23.jpg">
+                    <img src="lb/laba_6/images/image_23.jpg">
                 </div>
                 <p class="figure">Рисунок 23</p>
                 <p>Shrinkwrap</p>
@@ -385,7 +394,7 @@
                     выбрать группу вершин для управления формой.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_24.jpg">
+                    <img src="lb/laba_6/images/image_24.jpg">
                 </div>
                 <p class="figure">Рисунок 24</p>
 
@@ -397,7 +406,7 @@
                     использования групп вершин.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_25.jpg">
+                    <img src="lb/laba_6/images/image_25.jpg">
                 </div>
                 <p class="figure">Рисунок 25</p>
                 <p>Smooth (Сглаживание)</p>
@@ -405,7 +414,7 @@
                     выглядят слишком острыми.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_26.jpg">
+                    <img src="lb/laba_6/images/image_26.jpg">
                 </div>
                 <p class="figure">Рисунок 26</p>
                 <p>Wave (Волна)</p>
@@ -419,14 +428,14 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_27.jpg">
+                    <img src="lb/laba_6/images/image_27.jpg">
                 </div>
                 <p class="figure">Рисунок 27</p>
                 <p class="p_heading">Модификаторы Симуляции (Simulate Modifiers)</p>
                 <p>Модификаторы из раздела Simulate работают с физическим движком Blender.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_28.jpg">
+                    <img src="lb/laba_6/images/image_28.jpg">
                 </div>
                 <p class="figure">Рисунок 28</p>
                 <p> С их помощью можно создать анимации взаимодействия частиц (огонь, взрыв, сахарная вата), одежды,
@@ -442,7 +451,7 @@
                 </p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_29.jpg">
+                    <img src="lb/laba_6/images/image_29.jpg">
                 </div>
                 <p class="figure">Рисунок 29</p>
                 <p>Particle and Explode (Частица и Взрыв)</p>
@@ -452,7 +461,7 @@
                 </p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_30.jpg">
+                    <img src="lb/laba_6/images/image_30.jpg">
                 </div>
                 <p class="figure">Рисунок 30</p>
                 <p>Fluid Simulation (Симуляция Жидкости)</p>
@@ -462,7 +471,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_31.jpg">
+                    <img src="lb/laba_6/images/image_31.jpg">
                 </div>
                 <p class="figure">Рисунок 31</p>
                 <p>Soft Body (Мягкие Тела)</p>
@@ -474,7 +483,7 @@
                     сцене.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_32.jpg">
+                    <img src="lb/laba_6/images/image_32.jpg">
                 </div>
                 <p class="figure">Рисунок 32</p>
                 <p class="p_heading">Упражнение 4.</p>
@@ -489,7 +498,7 @@
                 </ol>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_33.jpg">
+                    <img src="lb/laba_6/images/image_33.jpg">
                 </div>
                 <p class="figure">Рисунок 33</p>
                 <p>Полка Инструментов: кнопками в блоке Origin переместите центр объекта в подходящее место при
@@ -497,7 +506,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_34.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_6/images/image_34.jpg" class="glow openModal" id="openModal"
                 data-model="3dmodel/lb_6/LB06_miss04.glb">
                 </div>
                 <p class="figure">Рисунок 34</p>
@@ -509,8 +518,8 @@
                     Mode) с помощью клавиши Tab.</p>
                 <p>Отмените выделение (клавиша A).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_35.jpg">
-                    <img src="/lb/laba_6/images/image_35.1.jpg">
+                    <img src="lb/laba_6/images/image_35.jpg">
+                    <img src="lb/laba_6/images/image_35.1.jpg">
                 </div>
                 <p class="figure">Рисунок 35</p>
                 <p>Включите режим работы с гранями (Ctrl+Tab или ). С помощью инструмента Разрезать пет- лей со сдвигом
@@ -518,8 +527,8 @@
                 <p>Выделите четыре центральных грани и удалите их (клавиша Delete, во всплывающем меню выбрать Грани,
                     Faces).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_36.jpg">
-                    <img src="/lb/laba_6/images/image_36.1.jpg">
+                    <img src="lb/laba_6/images/image_36.jpg">
+                    <img src="lb/laba_6/images/image_36.1.jpg">
                 </div>
                 <p class="figure">Рисунок 36</p>
                 <p>Перейдите в режим работы с вершинами, выделите четыре вершины, как показано на рисунке, и по- стройте
@@ -527,8 +536,8 @@
                 <p>Переключитесь в режим редактирования граней, выделите центральную грань и перейдите к виду справа
                     (Num3). Нажмите клавишу Ctrl и, удерживая её, щелчками мыши постройте хобот:</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_37.jpg">
-                    <img src="/lb/laba_6/images/image_37.1.jpg">
+                    <img src="lb/laba_6/images/image_37.jpg">
+                    <img src="lb/laba_6/images/image_37.1.jpg">
                 </div>
                 <p class="figure">Рисунок 37</p>
                 <p>Выделите грань в торце хобота, нажмите клавише E (выдавливание) и сразу же клавишу Enter (будет
@@ -537,7 +546,7 @@
                     страницу свойств Модификаторы (Modifiers), щелкнуть по кнопке Добавить модификатор (Add Modifier) и
                     выбрать модификатор Подразделение по- верхности (Subdivision surface).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_38.jpg">
+                    <img src="lb/laba_6/images/image_38.jpg">
                 </div>
                 <p class="figure">Рисунок 38</p>
                 <p>В свойствах модификатора в поле Вид (View) увеличьте число делений грани при просмотре до 2. Для
@@ -545,7 +554,7 @@
                     кнопки-выключатели.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_39.jpg">
+                    <img src="lb/laba_6/images/image_39.jpg">
                 </div>
                 <p class="figure">Рисунок 39</p>
                 <p>Выделите 4 грани из которых будем строить глаз. Удалите их и постройте такую же сетку, как для
@@ -559,7 +568,7 @@
                     такую же сетку, как на рисунке.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_40.jpg">
+                    <img src="lb/laba_6/images/image_40.jpg">
                 </div>
                 <p class="figure">Рисунок 40</p>
                 <p>Выделите 4 грани (см. рисунок) и вдавите их внутрь. Перейдите к виду спереди и измените положение
@@ -569,7 +578,7 @@
                     используйте масштабирование (клавиша S) и затем снова выдавливание.</p>
                 <div class="container_images_columns">
                     <div class="container_images_rows">
-                        <img src="/lb/laba_6/images/image_41.jpg">
+                        <img src="lb/laba_6/images/image_41.jpg">
                     </div>
                 </div>
                 <p>Перейдите к виду спереди. Проверьте, чтобы кнопка , которая ограничивает выделение только видимыми
@@ -579,7 +588,7 @@
                     остались невыделенными, добавьте их к выделению щелчком ПКМ при нажатой клавише Shift. Удалите
                     выделенные грани.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_42.jpg">
+                    <img src="lb/laba_6/images/image_42.jpg">
                 </div>
                 <p class="figure">Рисунок 42</p>
                 <p>Примените к оставшейся половине модификатор Отражение (Mirror). </p>
@@ -588,17 +597,17 @@
                     порядок применения модификаторов. Шов должен стать практически незаметен. Подумайте, по- чему так
                     произошло.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_43.jpg">
-                    <img src="/lb/laba_6/images/image_43.2.jpg">
+                    <img src="lb/laba_6/images/image_43.jpg">
+                    <img src="lb/laba_6/images/image_43.2.jpg">
                 </div>
                 <p class="figure">Рисунок 43</p>
                 <p>Добавьте две небольшие сферы и установите их внутрь глазных впадин.</p>
                 <p>Перемещая вершины, исправьте форму ушей так, как показано на рисунке:</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_44.jpg">
+                    <img src="lb/laba_6/images/image_44.jpg">
                 </div>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_44.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_6/images/image_44.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_6/LB06_z01.glb">
                 </div>
                 <p class="figure">Рисунок 44</p>
@@ -615,7 +624,7 @@
                 <p>С помощью элемента управления в нижней части окна включите режим Пропорциональная правка
                     (Proportional Editing).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_45.jpg">
+                    <img src="lb/laba_6/images/image_45.jpg">
                 </div>
                 <p class="figure">Рисунок 45</p>
                 <p>Перейдите к виду спереди (клавиша Num1) и включите ортографическую проекцию (Num5).</p>
@@ -625,12 +634,12 @@
                     затрагивает пропорциональное редактирование (белая окружность), и сместите вершину вниз. За- тем
                     сделайте то же самое с самой нижней вершиной (сместите ее немного вверх).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_46.jpg">
+                    <img src="lb/laba_6/images/image_46.jpg">
                 </div>
                 <p class="figure">Рисунок 46</p>
                 <p>Включите режим просмотра поверхностей Сплошной</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_47.jpg">
+                    <img src="lb/laba_6/images/image_47.jpg">
                 </div>
                 <p class="figure">Рисунок 47</p>
                 <p>(Solid, клавиша Z) и посмотрите, что получилось.</p>
@@ -643,34 +652,34 @@
                 <p>Переключитесь в режим выделения объектов (Object Mode, клавиша Tab) и включите просмотр каркаса
                     (Wireframe, клавиша Z).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_48.jpg">
+                    <img src="lb/laba_6/images/image_48.jpg">
                 </div>
                 <p class="figure">Рисунок 48</p>
                 <p>Нажмите клавиши Shift-A и создайте новую решётку (Добавить – Решётка, Add – Lattice). Разместите ее
                     так, чтобы она охватывала все яблоко.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_49.jpg">
+                    <img src="lb/laba_6/images/image_49.jpg">
                 </div>
                 <p class="figure">Рисунок 49</p>
                 <p>На странице свойств Lattice увеличьте количество разбиений решетки по осям. Отметьте флажок Наружа
                     (Outside), чтобы все внутренние вершины и ребра решётки были удалены (остаются только вершины на
                     наружных стенках).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_50.jpg">
+                    <img src="lb/laba_6/images/image_50.jpg">
                 </div>
                 <p class="figure">Рисунок 50</p>
                 <p>Выделите яблоко и примените к нему модификатор Решётка. В поле Object (объект) на странице свойств
                     нужно выбрать созданную решётку (она по умолчанию имеет имя Lattice).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_51.jpg">
+                    <img src="lb/laba_6/images/image_51.jpg">
                 </div>
                 <p class="figure">Рисунок 51</p>
                 <p>Выделите решётку и включите режим редактирования сетки (Edit Mode). Перейдите к виду спереди, нажмите
                     клавишу B (выделение прямоугольником) и выделите все вершины нижнего ряда, обводя их левой кнопкой
                     мыши.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_52.jpg">
-                    <img src="/lb/laba_6/images/image_52.2.jpg">
+                    <img src="lb/laba_6/images/image_52.jpg">
+                    <img src="lb/laba_6/images/image_52.2.jpg">
                 </div>
                 <p class="figure">Рисунок 52</p>
                 <p>Используя масштабирование (клавиша S ), уменьшите ширину сетки в этом месте. Затем сместите
@@ -678,8 +687,8 @@
                     нравится.</p>
                 <p>Постройте цилиндр и отрегулируйте его размеры примерно по размерам черенка яблока.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_6/images/image_53.jpg">
-                    <img src="/lb/laba_6/images/image_53.2.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_6/images/image_53.jpg">
+                    <img src="lb/laba_6/images/image_53.2.jpg" class="glow openModal" id="openModal"
                             data-model="3dmodel/lb_6/LB06_z02.glb">
                 </div>
                 <p class="figure">Рисунок 53</p>
@@ -703,7 +712,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>

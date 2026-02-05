@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">1.4 Сплайны, редактирование и модификация</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -43,7 +52,7 @@
                     настройки 3D и возможность использования различных шрифтов.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_1.jpg">
+                    <img src="lb/laba_9/images/image_1.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
                 <p>Вот основные из них:</p>
@@ -64,7 +73,7 @@
                         Здесь вы можете настроить область, по которой текст будет форматироваться (переноситься).</li>
                 </ul>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_2.jpg">
+                    <img src="lb/laba_9/images/image_2.jpg">
                 </div>
                 <p class="figure">Рисунок 2</p>
                 <p>Текст на иллюстрации был экструдирован и к нему была добавлена фаска (bevel). Некоторые шрифты при
@@ -79,20 +88,20 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_3.jpg">
+                    <img src="lb/laba_9/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
                 <p>После создания текста, убедитесь что текст выделен, перейдите в раздел Font в Окне Свойств и найдите
                     поле"Text on Curve". Щелкните в поле и из появившегося меню выберите нужную вам кривую. Текст примет
                     форму выбранной кривой.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_4.jpg">
+                    <img src="lb/laba_9/images/image_4.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_5.jpg">
+                    <img src="lb/laba_9/images/image_5.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
                 <p>Возможно, вам потребуется настроить расстояние между буквами для лучшего внешнего вида текста.</p>
@@ -101,7 +110,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_6.jpg">
+                    <img src="lb/laba_9/images/image_6.jpg">
                 </div>
                 <p class="figure">Рисунок 6</p>
 
@@ -115,7 +124,7 @@
                 <p>Для преобразования текста в Меш-объект выделите его и нажмите Alt -"C".</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_7.jpg">
+                    <img src="lb/laba_9/images/image_7.jpg">
                 </div>
                 <p class="figure">Рисунок 7</p>
 
@@ -123,7 +132,7 @@
                     кривую). Теперь, при переходе в Режим Редактирования вам будут доступны вершины мешей букв.
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_8.jpg">
+                    <img src="lb/laba_9/images/image_8.jpg">
                 </div>
                 <p class="figure">Рисунок 8</p>
 
@@ -138,7 +147,7 @@
                     видим, центр текстового объекта по умолчанию находится в начале строки, в левом нижнем углу:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_9.jpg">
+                    <img src="lb/laba_9/images/image_9.jpg">
                 </div>
                 <p class="figure">Рисунок 9</p>
 
@@ -147,21 +156,21 @@
                 </p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_10.jpg">
+                    <img src="lb/laba_9/images/image_10.jpg">
                 </div>
                 <p class="figure">Рисунок 10</p>
 
                 <p>Сейчас мы можем сам текстовый объект поместить в центр мира (или 3D курсора):</p>
                 <p>Object -> Snap -> Selection to Cursor</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_11.jpg">
+                    <img src="lb/laba_9/images/image_11.jpg">
                 </div>
                 <p class="figure">Рисунок 11</p>
                 <p>Можно работать с тестовым объектом. Все настройки мы найдём справа. Там можно изменить название
                     объекта, шрифт и т.д. Можно выдавить текст (Вкладка Geometry – Extrude).</p>
                 <div class="container_images_rows">
 
-                    <img src="/lb/laba_9/images/image_12.jpg">
+                    <img src="lb/laba_9/images/image_12.jpg">
                 </div>
                 <p class="figure">Рисунок 12</p>
                 <p>Вы можете сами поэкспериментировать. Вот только выдавливание вы увидите в обычном рендеринге, но не в
@@ -169,19 +178,19 @@
                 <p>Вы можете изменить тест надписи, перейдя в режим редактирования объекта</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_13.jpg">
+                    <img src="lb/laba_9/images/image_13.jpg">
                 </div>
                 <p class="figure">Рисунок 13</p>
                 <p>Тогда вам станет доступен курсор, с которым можно обращаться, как в обычном текстовом редакторе:
                     двигать влево-вправо истрелками, удалять знаки клавишами Backspace или Delete:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_14.jpg">
+                    <img src="lb/laba_9/images/image_14.jpg">
                 </div>
                 <p class="figure">Рисунок 14</p>
                 <p>Так выглядит выдавленный текст в обычном рендеринге:</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_15.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_9/images/image_15.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_9/LB09_miss01.glb">
                 </div>
                 <p class="figure">Рисунок 15</p>
@@ -192,7 +201,7 @@
                     "Text".</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_16.jpg">
+                    <img src="lb/laba_9/images/image_16.jpg">
                 </div>
                 <p class="figure">Рисунок 16</p>
 
@@ -200,7 +209,7 @@
                     переходим в раздел Font,где расположены настройки шрифта. Многие настройки шрифта схожи с
                     настройками в текстовых редакторах, но некоторые отличаются.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_17.jpg">
+                    <img src="lb/laba_9/images/image_17.jpg">
                 </div>
                 <p class="figure">Рисунок 17</p>
 
@@ -214,14 +223,14 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_18.jpg">
+                    <img src="lb/laba_9/images/image_18.jpg">
                 </div>
                 <p class="figure">Рисунок 18</p>
                 <p>Зададим цвет фона, поработаем с настройками камеры, выберем наиболее подходящий вид и сделаем рендер
                     сцены.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_19.jpg">
+                    <img src="lb/laba_9/images/image_19.jpg">
                 </div>
                 <p class="figure">Рисунок 19</p>
                 <p>После создания текста убеждаемся, что текст выделен, переходим в раздел Font в Окне Свойств и находим
@@ -230,7 +239,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_20.jpg">
+                    <img src="lb/laba_9/images/image_20.jpg">
                 </div>
                 <p class="figure">Рисунок 20</p>
                 <p>Другие типы кривых могут быть использованы для изменения формы текста точно таким же образом. </p>
@@ -240,10 +249,10 @@
                 <p>Придадим ей нужное положение, добавляя и перемещая точки.</p>
 
                 <div class="container_images_rows">
-                    <div class="container_images_columns"><img src="/lb/laba_9/images/image_21.jpg">
+                    <div class="container_images_columns"><img src="lb/laba_9/images/image_21.jpg">
                         <p>Надпись расположена вдоль кривой Безье</p>
                     </div>
-                    <div class="container_images_columns"><img src="/lb/laba_9/images/image_21.2.jpg">
+                    <div class="container_images_columns"><img src="lb/laba_9/images/image_21.2.jpg">
                         <p>Надпись расположена вдоль окружности</p>
                     </div>
                 </div>
@@ -255,7 +264,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_22.jpg">
+                    <img src="lb/laba_9/images/image_22.jpg">
                 </div>
                 <p class="figure">Рисунок 22</p>
                 <p class="p_heading">Задание 1.</p>
@@ -266,7 +275,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_23.jpg">
+                    <img src="lb/laba_9/images/image_23.jpg">
                 </div>
                 <p class="figure">Рисунок 23</p>
                 <p>Текст, который вы видите на изображении, был помещен на Окружность сформированную Кривой Безье. Если
@@ -274,7 +283,7 @@
                     в меш, после чего кривая была удалена.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_9/images/image_24.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_9/images/image_24.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_9/LB09_z01.glb">
                 </div>
                 <p class="figure">Рисунок 24</p>
@@ -290,7 +299,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>

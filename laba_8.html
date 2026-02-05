@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">1.4 Сплайны, редактирование и модификация</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -43,7 +52,7 @@
                     который будет представлять треугольную форму резьбы. Поместите 3D- Курсор слева от треугольника в то
                     место, где должен быть центр винта.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_1.jpg">
+                    <img src="lb/laba_8/images/image_1.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
                 <p>Здесь добавьте еще одну плоскость (находясь по прежнему в Режиме Редактирования). Удалите две правые
@@ -51,7 +60,7 @@
                     расположения 3D-Курсора. Эти две вершины определяют расстояние между витками и должны быть частью
                     меша профиля винта.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_2.jpg">
+                    <img src="lb/laba_8/images/image_2.jpg">
                 </div>
                 <p class="figure">Рисунок 2</p>
                 <p>Если вы создали вторую плоскость в Объектном Режиме, выделите оба меша и объедините их командой Ctrl
@@ -64,14 +73,14 @@
                     производиться относительно текущего вида.</p>
                 <p>Используйте команду Screw на Полке Инструментов.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_3.jpg">
+                    <img src="lb/laba_8/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
                 <p>Сразу после нажатия кнопки Screw на Панели Инструментов будут доступны дополнительные опции: </p>
                 <p>Step - Шаг, контролирует качество витка (значение 32).</p>
                 <p>Turns - количество витков</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_4.jpg">
+                    <img src="lb/laba_8/images/image_4.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
                 <p>Center и Axis (оси) - позволят сделать настройки расположения и направления винта</p>
@@ -79,7 +88,7 @@
                     сращения винта.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_5.jpg">
+                    <img src="lb/laba_8/images/image_5.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
                 <p>Для создания спирали вам нужно сделать все то же самое, как в случае с винтом, но в качестве профиля
@@ -88,7 +97,7 @@
                     пружины.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_6.jpg">
+                    <img src="lb/laba_8/images/image_6.jpg">
                 </div>
                 <p class="figure">Рисунок 6</p>
 
@@ -100,7 +109,7 @@
                     Это относительно примитивная форма зубца шестеренки, но она отлично подойдет для примера.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_7.jpg">
+                    <img src="lb/laba_8/images/image_7.jpg">
                 </div>
                 <p class="figure">Рисунок 7</p>
 
@@ -110,7 +119,7 @@
                     параметры, требующие настройки:
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_8.jpg">
+                    <img src="lb/laba_8/images/image_8.jpg">
                 </div>
                 <p class="figure">Рисунок 8</p>
 
@@ -124,7 +133,7 @@
                     " с Полки Инструментов.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_9.jpg" id="openModal" data-model="lb_8/LB08_miss01.glb">
+                    <img src="lb/laba_8/images/image_9.jpg" id="openModal" data-model="lb_8/LB08_miss01.glb">
                 </div>
                 <p class="figure">Рисунок 9</p>
                 <p>Для получения завершенной формы шестеренки добавьте цилиндр и с масштабируйте его для заполнения
@@ -146,7 +155,7 @@
                     которые могут понадобиться.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_10.jpg">
+                    <img src="lb/laba_8/images/image_10.jpg">
                 </div>
                 <p class="figure">Рисунок 10</p>
                 <p class="p_heading">Bolt Factory</p>
@@ -155,13 +164,13 @@
                     созданного вами объекта. Здесь вы можете выбрать, создать болт или гайку, указать его метрические
                     размеры, размер и тип головки, длину и т.д.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_11.jpg" class="glow openModal">
+                    <img src="lb/laba_8/images/image_11.jpg" class="glow openModal">
                 </div>
                 <p class="figure">Рисунок 11</p>
                 <p>Практически все, что вам может понадобиться для быстрого создания механического оборудования.</p>
                 <div class="container_images_rows">
 
-                    <img src="/lb/laba_8/images/image_12.jpg">
+                    <img src="lb/laba_8/images/image_12.jpg">
                 </div>
                 <p class="figure">Рисунок 12</p>
                 <p class="p_heading">Gears</p>
@@ -172,7 +181,7 @@
                 </p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_13.jpg">
+                    <img src="lb/laba_8/images/image_13.jpg">
                 </div>
                 <p class="figure">Рисунок 13</p>
                 <p class="p_heading">Задание 1.</p>
@@ -182,7 +191,7 @@
                     Пользовательских Настроек.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_14.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_14.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_8/LB08_z01.glb">
                 </div>
                 <p class="figure">Рисунок 14</p>
@@ -191,7 +200,7 @@
                 <p class="p_heading">Задание 2.</p>
                 <p>Создайте механизмы</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_15.3.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_15.3.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_8/LB08_z02.glb">
                 </div>
                 <p class="figure">Рисунок 15</p>
@@ -202,7 +211,7 @@
                     простых и удобных способов создания подобных объектов – использовать кривые (curves).
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_16.jpg">
+                    <img src="lb/laba_8/images/image_16.jpg">
                 </div>
                 <p class="figure">Рисунок 16</p>
 
@@ -234,14 +243,14 @@
                 </p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_17.jpg">
+                    <img src="lb/laba_8/images/image_17.jpg">
                 </div>
                 <p class="figure">Рисунок 17</p>
 
                 <p>Назначив кривой подходящий материал, получим готовый ровно уложенный провод:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_18.jpg">
+                    <img src="lb/laba_8/images/image_18.jpg">
                 </div>
                 <p class="figure">Рисунок 18</p>
                 <p>А теперь посмотрим, насколько легко этим управлять:</p>
@@ -251,14 +260,14 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_19.jpg">
+                    <img src="lb/laba_8/images/image_19.jpg">
                 </div>
                 <p class="figure">Рисунок 19</p>
                 <p>В результате этих нехитрых манипуляций провод стал выглядеть гораздо интереснее:</p>
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_20.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_20.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_8/LB08_miss02.glb">
                 </div>
                 <p class="figure">Рисунок 20</p>
@@ -271,7 +280,7 @@
                 <p>Придадим ей нужное положение, добавляя и перемещая точки.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_21.jpg">
+                    <img src="lb/laba_8/images/image_21.jpg">
                 </div>
                 <p class="figure">Рисунок 21</p>
                 <p>Зададим диаметр:Shape – Fill = Full</p>
@@ -280,7 +289,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_22.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_22.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_8/LB08_miss03.glb">
                 </div>
                 <p class="figure">Рисунок 22</p>
@@ -298,7 +307,7 @@
                 <p>Добавим им модификатор Subdivision Surface для сглаживания.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_23.jpg">
+                    <img src="lb/laba_8/images/image_23.jpg">
                 </div>
                 <p class="figure">Рисунок 23</p>
                 <p>Добавим в сцену кривую для создания формы обводки в виде “уголка”.</p>
@@ -313,7 +322,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_24.jpg">
+                    <img src="lb/laba_8/images/image_24.jpg">
                 </div>
                 <p class="figure">Рисунок 24</p>
                 <p>Выделим первую из направляющих кривых.</p>
@@ -323,7 +332,7 @@
                     закрыт.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_25.jpg">
+                    <img src="lb/laba_8/images/image_25.jpg">
                 </div>
                 <p class="figure">Рисунок 25</p>
                 <p>Добавим в сцену кривую для создания формы обводки в виде “короба”.</p>
@@ -331,12 +340,12 @@
                 <p>Как и для первого профиля придадим ей нужную форму относительно точки origin и отрегулируем размер.
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_26.jpg">
+                    <img src="lb/laba_8/images/image_26.jpg">
                 </div>
                 <p class="figure">Рисунок 26</p>
                 <p>Выделим вторую направляющую кривую и укажем в поле Bevel Object профиль “Profile2”.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_27.jpg">
+                    <img src="lb/laba_8/images/image_27.jpg">
                 </div>
                 <p class="figure">Рисунок 27</p>
 
@@ -347,21 +356,21 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_28.jpg">
+                    <img src="lb/laba_8/images/image_28.jpg">
                 </div>
                 <p class="figure">Рисунок 28</p>
                 <p>Сделанные изменения сразу же отражаются на итоговом “коробе”:</p>
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_29.jpg">
+                    <img src="lb/laba_8/images/image_29.jpg">
                 </div>
                 <p class="figure">Рисунок 29</p>
 
                 <p>Назначим готовым объектам материалы:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_30.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_30.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_8/LB08_miss04.glb">
                 </div>
                 <p class="figure">Рисунок 30</p>
@@ -373,7 +382,7 @@
                 <p class="p_heading">Упражнение 5.</p>
                 <p>Для начала добавим в сцену направляющую кривую и расположим ее необходимым образом.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_31.jpg">
+                    <img src="lb/laba_8/images/image_31.jpg">
                 </div>
                 <p class="figure">Рисунок 31</p>
                 <p>Создадим кривую, которая будет отвечать за изменение диаметра на определенном участке:</p>
@@ -382,7 +391,7 @@
                     расстояние от origin до точек кривой указывает на величину диаметра моделируемого объекта.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_32.jpg">
+                    <img src="lb/laba_8/images/image_32.jpg">
                 </div>
                 <p class="figure">Рисунок 32</p>
                 <p>Добавим в сцену еще одну кривую, которая будет состоять всего из двух точек, соединенных прямым
@@ -395,7 +404,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_33.jpg">
+                    <img src="lb/laba_8/images/image_33.jpg">
                 </div>
                 <p class="figure">Рисунок 33</p>
 
@@ -408,14 +417,14 @@
                 <p>Добавить для кривой модификатор Curve: в поле Object – указать направляющую кривую</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_34.jpg">
+                    <img src="lb/laba_8/images/image_34.jpg">
                 </div>
                 <p class="figure">Рисунок 34</p>
 
                 <p>Назначим получившейся трубе материал.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_35.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_35.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_8/LB08_miss04.glb">
                 </div>
                 <p class="figure">Рисунок 35</p>
@@ -434,7 +443,7 @@
                 <p>Создадим, как в примере выше 3 кривые: направляющую, назовем ее “Path2”, основание для сегмента трубы
                     “Segment2”и кривую изменения диаметра “Taper2”</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_36.jpg">
+                    <img src="lb/laba_8/images/image_36.jpg">
                 </div>
                 <p class="figure">Рисунок 36</p>
                 <p>Для сегмента “Segment2” выполним операции для создания трубы по направляющей, как в предыдущем
@@ -453,7 +462,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_37.jpg">
+                    <img src="lb/laba_8/images/image_37.jpg">
                 </div>
                 <p class="figure">Рисунок 37</p>
                 <p>Теперь, если перемещать или экструдировать точки направляющей, новые сегменты не добавляются, а
@@ -463,7 +472,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_8/images/image_38.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_8/images/image_38.jpg" class="glow openModal" id="openModal"
                         data-model="lb_8/LB08_miss04.glb">
                 </div>
                 <p class="figure">Рисунок 38</p>
@@ -481,7 +490,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>

@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">2.2 Редактор материалов, имитация внешней среды</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -38,8 +47,8 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_1.jpg">
-                    <img src="/lb/laba_13/images/image_1.2.jpg">
+                    <img src="lb/laba_13/images/image_1.jpg">
+                    <img src="lb/laba_13/images/image_1.2.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
                 <p>После нажатия кнопки "New" вам станет доступным выбор имеющихся в Blender типов текстур. Сначала вам
@@ -52,7 +61,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_2.jpg">
+                    <img src="lb/laba_13/images/image_2.jpg">
                 </div>
                 <p class="figure">Рисунок 2</p>
                 <p><em>Вы не можете добавить Текстуру без предварительного добавления Материала. Материалы и Текстуры
@@ -66,12 +75,12 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_3.jpg">
+                    <img src="lb/laba_13/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_4.jpg">
+                    <img src="lb/laba_13/images/image_4.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
 
@@ -96,15 +105,15 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_5.jpg">
-                    <img src="/lb/laba_13/images/image_5.2.jpg">
+                    <img src="lb/laba_13/images/image_5.jpg">
+                    <img src="lb/laba_13/images/image_5.2.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
                 <p>ли вы посмотрите на отрендеренное изображение, то должны увидеть рисунок древесины на кубе, но с
                     дополнительным цветом.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_6.jpg">
+                    <img src="lb/laba_13/images/image_6.jpg">
                 </div>
                 <p class="figure">Рисунок 6</p>
                 <p>Это нужно будет исправить!</p>
@@ -113,26 +122,26 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_7.jpg">
+                    <img src="lb/laba_13/images/image_7.jpg">
                 </div>
                 <p class="figure">Рисунок 7</p>
                 <p>Вы так же можете настроить размер (Size по осям X,Y,Z) текстуры,</li>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_8.jpg">
+                    <img src="lb/laba_13/images/image_8.jpg">
                 </div>
                 <p class="figure">Рисунок 8</p>
                 <p>подобрать параметр Noise Basis для получения дополнительных эффектов.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_9.jpg">
+                    <img src="lb/laba_13/images/image_9.jpg">
                 </div>
                 <p class="figure">Рисунок 9</p>
                 <p>Свободно экспериментируйте с параметрами текстур - это позволит лучше понять как они работают.
                     Текстура Stucci (штукатурка)</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_10.jpg">
+                    <img src="lb/laba_13/images/image_10.jpg">
                 </div>
                 <p class="figure">Рисунок 10</p>
 
@@ -149,7 +158,7 @@
                 <p>Ниже приведены образцы текстур с различным типом параметра " Noise Basis ".</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_11.jpg">
+                    <img src="lb/laba_13/images/image_11.jpg">
                 </div>
                 <p class="figure">Рисунок 11</p>
                 <p class="p_heading">Изображения и Видео в качестве Текстур</p>
@@ -163,14 +172,14 @@
                     помещено на объект в качестве материала.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_12.jpg">
+                    <img src="lb/laba_13/images/image_12.jpg">
                 </div>
                 <p class="figure">Рисунок 12</p>
                 <p>Для использования изображения в качестве текстуры наложите на объект материал, как мы делали это
                     ранее, перейдите в раздел текстур (Texture) и выберите в качестве Типа текстуры "Image or Movie
                     ".Когда Вы выберете этот тип перед вами откроются следующие настройки:</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_13.jpg">
+                    <img src="lb/laba_13/images/image_13.jpg">
                 </div>
                 <p class="figure">Рисунок 13</p>
                 <p>Основные Настройки Рендера</p>
@@ -179,13 +188,13 @@
                     грань объекта и растягивается по боковым. Такой способ проекции называется " Flat " (плоский). Он
                     может быть установлен на панели " Mapping ".</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_14.jpg">
+                    <img src="lb/laba_13/images/image_14.jpg">
                 </div>
                 <p class="figure">Рисунок 14</p>
                 <p>Другие варианты проекции проиллюстрированы ниже:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_15.jpg">
+                    <img src="lb/laba_13/images/image_15.jpg">
                 </div>
                 <p class="figure">Рисунок 15</p>
                 <p>Blender распространяется без набора коллекций изображений, только встроенные генераторы текстур.
@@ -199,7 +208,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_16.jpg">
+                    <img src="lb/laba_13/images/image_16.jpg">
                 </div>
                 <p class="figure">Рисунок 16</p>
                 <p>Помните что настройки из разделов Material и Texture работают совместно. Кирпичи выглядят хорошо, но
@@ -209,7 +218,7 @@
                     кирпичам более реалистичный вид.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_17.jpg">
+                    <img src="lb/laba_13/images/image_17.jpg">
                 </div>
                 <p class="figure">Рисунок 17</p>
                 <li>Выполните рендеринг.</li>
@@ -225,7 +234,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_18.jpg">
+                    <img src="lb/laba_13/images/image_18.jpg">
                 </div>
                 <p class="figure">Рисунок 18</p>
                 <p class="p_heading">Displacement Mapping (Карты Смещений)</p>
@@ -237,7 +246,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_19.jpg">
+                    <img src="lb/laba_13/images/image_19.jpg">
                 </div>
                 <p class="figure">Рисунок 19</p>
                 <p>Если вы начали с куба, перейдите в Режим Редактирования (клавиша Tab) и выделите все вершины.</p>
@@ -250,7 +259,7 @@
                 <p>Пока ничего нового.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_20.jpg">
+                    <img src="lb/laba_13/images/image_20.jpg">
                 </div>
                 <p class="figure">Рисунок 20</p>
                 <p>Теперь перейдите на панель " Influence " и найдите опцию "Displacement ", активируйте ее и слегка
@@ -260,14 +269,14 @@
                     можно управлять.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_21.jpg">
+                    <img src="lb/laba_13/images/image_21.jpg">
                 </div>
                 <p class="figure">Рисунок 21</p>
                 <p class="p_heading">Упражнение 3.</p>
                 <p>Для следующего теста создайте простое изображение в обычном растровом редакторе.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_22.jpg">
+                    <img src="lb/laba_13/images/image_22.jpg">
                 </div>
                 <p class="figure">Рисунок 22</p>
                 <p>Используйте серый цвет в качестве фона, так же добавьте белые и черные формы.</p>
@@ -279,8 +288,8 @@
                     Чем больше Subdivision (подразделений) вы сделаете - тем качественнее будет выглядеть эффект.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_23.jpg">
-                    <img src="/lb/laba_13/images/image_23.2.jpg">
+                    <img src="lb/laba_13/images/image_23.jpg">
+                    <img src="lb/laba_13/images/image_23.2.jpg">
                 </div>
                 <p class="figure">Рисунок 23</p>
                 <p>Куб на изображении справа был подразделен (Subdivision) несколько больше, чем куб слева для получения
@@ -291,7 +300,7 @@
                 <p class="p_heading">Задание 1.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_24.jpg">
+                    <img src="lb/laba_13/images/image_24.jpg">
                 </div>
                 <p class="figure">Рисунок 24</p>
                 <ol>
@@ -321,7 +330,7 @@
 
 
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_25.jpg">
+                        <img src="lb/laba_13/images/image_25.jpg">
                     </div>
                     <p class="figure">Рисунок 25</p>
                     <li>Выделите параллелепипед и нажмите кнопку tab. </li>
@@ -329,42 +338,42 @@
                         пополам, ещё....</li>
 
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_26.jpg">
+                        <img src="lb/laba_13/images/image_26.jpg">
                     </div>
                     <p class="figure">Рисунок 26</p>
                     <li>Выделите снизу 4 прямоугольника и с помощью инструмента Extrude, сделайте ножки для стола. </li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_27.jpg">
+                        <img src="lb/laba_13/images/image_27.jpg">
                     </div>
                     <p class="figure">Рисунок 27</p>
                     <li>Изменяя положение и угол наклона камеры и источника света, добейтесь качественного отображения
                         стола на сцене (Render – Render Image).</li>
 
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_28.jpg">
-                        <img src="/lb/laba_13/images/image_28.2.jpg">
+                        <img src="lb/laba_13/images/image_28.jpg">
+                        <img src="lb/laba_13/images/image_28.2.jpg">
                     </div>
                     <p class="figure">Рисунок 28</p>
                     <li>Поменяйте Render Engine на Cycles. </li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_29.jpg">
+                        <img src="lb/laba_13/images/image_29.jpg">
                     </div>
                     <p class="figure">Рисунок 29</p>
                     <li>Создайте новый материал с поверхностью (Surface) Principled BSDF и переименуйте его. </li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_30.jpg">
+                        <img src="lb/laba_13/images/image_30.jpg">
                     </div>
                     <p class="figure">Рисунок 30</p>
 
                     <li>Вместо временной шкалы выберите Shader Editor.</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_31.jpg">
+                        <img src="lb/laba_13/images/image_31.jpg">
                     </div>
                     <p class="figure">Рисунок 31</p>
                     <li>Добавьте к ветви материала изображениетекстуру Add – Texture – Image Texture. </li>
                     <li>Загрузите с диска нужную картинку.</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_13/images/image_32.jpg">
+                        <img src="lb/laba_13/images/image_32.jpg">
                     </div>
                     <p class="figure">Рисунок 32</p>
 
@@ -374,7 +383,7 @@
                     <li>Соедините их по образцу и нажмите на кнопку:</li>
                 </ol>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_33.jpg">
+                    <img src="lb/laba_13/images/image_33.jpg">
                 </div>
                 <p class="figure">Рисунок 33</p>
 
@@ -390,7 +399,7 @@
                     текстур на отдельные части маяка. Нажмите клавишу " P " для разделения меша и в появившемся меню
                     выберите опцию "Selection". крыша маяка стала отдельным меш-объектом.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_34.jpg">
+                    <img src="lb/laba_13/images/image_34.jpg">
                 </div>
                 <p class="figure">Рисунок 34</p>
                 <p>Теперь выделите все вершины обходной площадки с помощью инструмента прямоугольного выделения и
@@ -398,7 +407,7 @@
                     И, наконец, выделите осветительную часть маяка и отделите ее так же как остальные части с помощью
                     "P".</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_35.jpg">
+                    <img src="lb/laba_13/images/image_35.jpg">
                 </div>
                 <p class="figure">Рисунок 35</p>
                 <p>Выйдите из режима редактирования (tab) и отдалитесь назад что бы видеть весь маяк целиком. Выделите
@@ -407,7 +416,7 @@
                     бликования объекта. Нам не нужно настраивать цвет материала, мы используем изображение в качестве
                     текстуры. Просто для проверки текущего результата сделайте рендер маяка (F12).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_36.jpg">
+                    <img src="lb/laba_13/images/image_36.jpg">
                 </div>
                 <p class="figure">Рисунок 36</p>
                 <p>Если на отрендереном изображении вы заметите странные эффекты на объекте, это результат разделения
@@ -415,19 +424,19 @@
                     инструмент "Recalculate" (перерасчета нормалей) или "Remove Doubles" (удаление дублирующих вершин),
                     расположенные на Полке Инструментов. Есть вероятность что у вас имеются сдублированные меши.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_37.jpg">
+                    <img src="lb/laba_13/images/image_37.jpg">
                 </div>
                 <p class="figure">Рисунок 37</p>
                 <p>Когда вы найдете нужные текстуры stone.zip и сохраните их на своем компьютере, перейдите в раздел
                     Texture и выберите опцию Image or Movie. На панели Image нажмите кнопку "Open" и загрузите текстуру,
                     которую хотите использовать. Нажмите клавишу F12 и сделайте рендер маяка.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_38.jpg">
+                    <img src="lb/laba_13/images/image_38.jpg">
                 </div>
                 <p class="figure">Рисунок 38</p>
                 <p>У вас должно получиться что-то похожее на рисунок.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_39.jpg">
+                    <img src="lb/laba_13/images/image_39.jpg">
                 </div>
                 <p class="figure">Рисунок 39</p>
                 <p>Выглядит немного странно. По умолчанию текстуры проецируются на объект методом Flat, когда проекция
@@ -435,14 +444,14 @@
                     исправления этого перейдите на панель Mapping и измените метод проекции (Projection) с" Flat " на "
                     Tube ".</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_40.jpg">
+                    <img src="lb/laba_13/images/image_40.jpg">
                 </div>
                 <p class="figure">Рисунок 40</p>
                 <p>Сделайте рендер еще раз, разница должна быть заметна.</p>
                 <p>Теперь изображение должно "лежать" на маяке достаточно хорошо. Но камни наверняка выглядят слишком
                     большими и немного плоскими. Было бы хорошо симулировать некоторую глубину для текстуры камней.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_41.jpg">
+                    <img src="lb/laba_13/images/image_41.jpg">
                 </div>
                 <p class="figure">Рисунок 41</p>
                 <p>Для создания эффекта объема каменной кладки на панели "Influence" активируйте опцию "Normal". Это
@@ -450,7 +459,7 @@
                     параметром лучше чем другие. Это зависит от контраста используемых в них цветов. Сделайте рендеринг
                     еще раз проверки результата.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_42.jpg">
+                    <img src="lb/laba_13/images/image_42.jpg">
                 </div>
                 <p class="figure">Рисунок 42</p>
                 <p>Повторите эти действия для каждой части маяка и наложите на нихсвои текстуры. На некоторых частях вы
@@ -460,7 +469,7 @@
                 <p>На иллюстрации приведен финальный рендер моего маяка.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_43.jpg">
+                    <img src="lb/laba_13/images/image_43.jpg">
                 </div>
                 <p class="figure">Рисунок 43</p>
                 <p>Используйте простой материал красного цвета для осветительной части. На обходную площадку наложите
@@ -470,7 +479,7 @@
                     выходить наружу. Мы сделаем это наиболее простым способом - удалим грани в режиме редактирования.
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_44.jpg">
+                    <img src="lb/laba_13/images/image_44.jpg">
                 </div>
                 <p class="figure">Рисунок 44</p>
                 <p>Сначала выберите трубообразный меш осветительной части маяка и перейдите в режим редактирования
@@ -484,7 +493,7 @@
                 <p>После удаления граней выйдите из режима редактирования и сделайте рендеринг изображения клавишей F12.
                     Ваш маяк должен выглядеть примерно так же, как на иллюстрации.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_45.jpg">
+                    <img src="lb/laba_13/images/image_45.jpg">
                 </div>
                 <p class="figure">Рисунок 45</p>
                 <p>Теперь, когда мы закончили текстурировать и редактировать маяк, самое время соединить меши вместе. В
@@ -495,7 +504,7 @@
                     с несколькими материалами, список которых можно увидеть на панели Material. Возможно, после
                     объединения, вам потребуется зайти туда и выполнить незначительные настройки.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_46.jpg">
+                    <img src="lb/laba_13/images/image_46.jpg">
                 </div>
                 <p class="figure">Рисунок 46</p>
                 <p>Пришло время сохранить файл "Lighthouse" и перейти к сцене "Landscape". Нам нужно найти текстуру
@@ -507,7 +516,7 @@
                     придания траве некоторой глубины. Возможно, вы захотите выбрать способ проекции текстуры " Flat ".
                     Ниже приведен завершающий рендер с хорошо наложенной и настроенной текстурой травы и земли:</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_47.jpg">
+                    <img src="lb/laba_13/images/image_47.jpg">
                 </div>
                 <p class="figure">Рисунок 47</p>
                 <p>Давайте поработаем над водой. Выберите плоскость, представляющую воду. Опять же, используйте
@@ -519,7 +528,7 @@
                     поменяйте второй цвет на панели Influence. Выберите в качестве второго цвета чуть более темный синий
                     (сине-серый).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_48.jpg">
+                    <img src="lb/laba_13/images/image_48.jpg">
                 </div>
                 <p class="figure">Рисунок 48</p>
                 <p>Помните, наша цель получить ночное штормовое море, постарайтесь выбрать подходящие для этого цвета.
@@ -533,7 +542,7 @@
                     поменяйте второй цвет на панели Influence. Выберите в качестве второго цвета чуть более темный синий
                     (сине-серый).</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_49.jpg">
+                    <img src="lb/laba_13/images/image_49.jpg">
                 </div>
                 <p class="figure">Рисунок 49</p>
                 <p>Результат выглядит достаточно хорошо. Для получения более высоких волн вы всегда можете изменить
@@ -541,7 +550,7 @@
                     "Noise Basis". При некоторых значениях этого параметра волны будут выглядеть более реалистично.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_50.jpg">
+                    <img src="lb/laba_13/images/image_50.jpg">
                 </div>
                 <p class="figure">Рисунок 50</p>
                 <p>Помните, что Blender может использовать сразу несколько текстур для одного объекта. Выберите в Списке
@@ -551,12 +560,12 @@
                     настройте параметр Normal. Не забудьте настроить цвет текстуры, подобрав подходящий по оттенку к
                     основному цвету материала.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_51.jpg">
+                    <img src="lb/laba_13/images/image_51.jpg">
                 </div>
                 <p class="figure">Рисунок 51</p>
                 <p>На изображении приведен конечный результат.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_13/images/image_52.jpg">
+                    <img src="lb/laba_13/images/image_52.jpg">
                 </div>
                 <p class="figure">Рисунок 52</p>
                 <p class="p_heading">Контрольные вопросы</p>
@@ -571,7 +580,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>

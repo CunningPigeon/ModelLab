@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">1.3 Моделирование сцены</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -36,7 +45,7 @@
                 <p>Использование NURBS для создания Изогнутых Форм (Поверхностей)</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_5/images/image_01.png">
+                    <img src="lb/laba_5/images/image_01.png">
                 </div>
                 <p class="figure">Рисунок 1</p>
                 <p>Если вы посмотрите в меню Surface, то увидите несколько вариаций форм, которые могут быть созданы.
@@ -56,7 +65,7 @@
                 </p>
             </div>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_02.png">
+                <img src="lb/laba_5/images/image_02.png">
             </div>
             <p class="figure">Рисунок 2</p>
             <p>Перейдите в вид, в котором вы видите окружность сбоку (попробуйте вид спереди, если создавали окружность
@@ -66,8 +75,8 @@
                 Редактирования слегка измените форму каждой из них.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_03.png">
-                <img src="/lb/laba_5/images/image_03.1.png">
+                <img src="lb/laba_5/images/image_03.png">
+                <img src="lb/laba_5/images/image_03.1.png">
             </div>
             <p class="figure">Рисунок 3</p>
 
@@ -79,7 +88,7 @@
             <p>Результатом должен стать плавно изогнутый объект.</p>
             <p>Параметры формы можно контролировать в разделе " Object Data " в Окне Свойств.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_04.png">
+                <img src="lb/laba_5/images/image_04.png">
             </div>
             <p class="figure">Рисунок 4</p>
             <p>Если вам нужно преобразовать этот объект в Меш, нажмите Alt -" C ". Это отличный способ для создания
@@ -87,7 +96,7 @@
             <p>https://drive.google.com/file/d/1NrG2SCTwqhBHdg9Pa2pyEC5rP-kVWWO4/view?usp=sharing</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_05.png" class="glow openModal" id="openModal"
+                <img src="lb/laba_5/images/image_05.png" class="glow openModal" id="openModal"
                 data-model="3dmodel/lb_5/LB05_miss01.glb">
             </div>
             <p class="figure">Рисунок 5</p>
@@ -100,7 +109,7 @@
                 появившемся меню выбираем пункт указанный на рисунке:</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_06.png">
+                <img src="lb/laba_5/images/image_06.png">
             </div>
             <p class="figure">Рисунок 6</p>
 
@@ -108,7 +117,7 @@
                 результата зафиксируйте его нажав левую клавишу мыши.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_07.png">
+                <img src="lb/laba_5/images/image_07.png">
             </div>
             <p class="figure">Рисунок 7</p>
 
@@ -117,14 +126,14 @@
                 выберите средние верхние контрольные точки. Должно получится как на рисунке:</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_08.png">
+                <img src="lb/laba_5/images/image_08.png">
             </div>
             <p class="figure">Рисунок 8</p>
             <p>Переключитесь в режим вида сверху. Убедитесь, что выбраны все вершины как на рисунке, если все в порядке
                 вернитесь в режим вида спереди .</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_09.png">
+                <img src="lb/laba_5/images/image_09.png">
             </div>
             <p class="figure">Рисунок 9</p>
 
@@ -133,7 +142,7 @@
                 что-то типа этого:</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_10.png">
+                <img src="lb/laba_5/images/image_10.png">
             </div>
             <p class="figure">Рисунок 10</p>
 
@@ -141,28 +150,28 @@
                 левые и правые контрольные точки, используя режим масштабирования S и перемещения G добейтесь похожего
                 результата.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_11.png">
+                <img src="lb/laba_5/images/image_11.png">
             </div>
             <p class="figure">Рисунок 11</p>
 
             <p>Отмените выделение всех вершин. Используя выделение прямоугольником выберите нижние левые и правые
                 контрольные точки, используя режим масштабирования добейтесь такого результата как на рисунке:</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_12.png">
+                <img src="lb/laba_5/images/image_12.png">
             </div>
             <p class="figure">Рисунок 12</p>
 
             <p>Используя режим перемещения поднимите выделенные вершины немного вверх.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_13.png">
+                <img src="lb/laba_5/images/image_13.png">
             </div>
             <p class="figure">Рисунок 13</p>
             <p>Теперь, в окне вида спереди наше сердце выглядит лучше, но когда переключим на вид сбоку, Вы увидите, что
                 наше сердце слишком толстое!</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_14.png">
+                <img src="lb/laba_5/images/image_14.png">
             </div>
             <p class="figure">Рисунок 14</p>
 
@@ -171,14 +180,14 @@
                 плоскости.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_15.png">
+                <img src="lb/laba_5/images/image_15.png">
             </div>
             <p class="figure">Рисунок 15</p>
 
 
             <p>Результат после масштабирования.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_16.png" class="glow openModal" id="openModal"
+                <img src="lb/laba_5/images/image_16.png" class="glow openModal" id="openModal"
                     data-model="3dmodel/lb_5/LB05_z01.glb">
             </div>
             <p class="figure">Рисунок 16</p>
@@ -196,7 +205,7 @@
             <p>Первая созданная Мета-форма будет родительской для всех остальных. Когда вы будете перемещать ее,
                 остальные мета-формы будут поворачиваться за ней. Материалы всех Мета-форм так же связанны.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_17.png">
+                <img src="lb/laba_5/images/image_17.png">
             </div>
             <p class="figure">Рисунок 17</p>
             <p>Мета-формы могут показаться слегка запутанными, в первую очередь, из-за их взаимодействия между собой.
@@ -206,7 +215,7 @@
                 материал первой формы - вы изменяете внешний вид всех Мета-форм.</p>
             <p>Материалы всех Мета-форм также связаны.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_18.png">
+                <img src="lb/laba_5/images/image_18.png">
             </div>
             <p class="figure">Рисунок 18</p>
             <p>Для изменений формы только одного объекта выделяйте окружность вокруг него. Вы можете изменять внешний
@@ -223,7 +232,7 @@
                 задании мы экструдируем окружность, создадим NURBS поверхность и используем Мета-формы для создания
                 эффекта Лавы в Лампе.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_19.png">
+                <img src="lb/laba_5/images/image_19.png">
             </div>
             <p class="figure">Рисунок 19</p>
 
@@ -235,7 +244,7 @@
                 функцию Auto-Smooth (в разделе Object Data в Окне Свойств).</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_20.png">
+                <img src="lb/laba_5/images/image_20.png">
             </div>
             <p class="figure">Рисунок 20</p>
 
@@ -244,7 +253,7 @@
                 образующим ее профилям — NURBS - окружностям. Переключитесь обратно в вид сверху и откройте меню " Add "
                 (Shift -" A "), в разделе Surface выберите NURBS Circle.</p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_21.png">
+                <img src="lb/laba_5/images/image_21.png">
             </div>
             <p class="figure">Рисунок 21</p>
 
@@ -252,7 +261,7 @@
                 Измените размер окружностей для получения конусообразной формы стеклянной части лампы. Удерживая клавишу
                 "Shift" выделите все окружности и объедините их с помощью </p>
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_22.png">
+                <img src="lb/laba_5/images/image_22.png">
             </div>
             <p class="figure">Рисунок 22</p>
 
@@ -264,14 +273,14 @@
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_23.png">
+                <img src="lb/laba_5/images/image_23.png">
             </div>
             <p class="figure">Рисунок 23</p>
             <p>После того как вы закончите, форма должна выглядеть близко к иллюстрации.</p>
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_24.png">
+                <img src="lb/laba_5/images/image_24.png">
             </div>
             <p class="figure">Рисунок 24</p>
             <p>Последним шагом в создании стеклянной части лампы будет преобразование NURBS-поверхности в Меш-объект.
@@ -280,7 +289,7 @@
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_25.png">
+                <img src="lb/laba_5/images/image_25.png">
             </div>
             <p class="figure">Рисунок 25</p>
 
@@ -289,7 +298,7 @@
                 выглядеть как на изображении.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_26.png">
+                <img src="lb/laba_5/images/image_26.png">
             </div>
             <p class="figure">Рисунок 26</p>
 
@@ -301,8 +310,8 @@
                 сторону. Это должно решить проблему.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_27.png">
-                <img src="/lb/laba_5/images/image_27.1.png">
+                <img src="lb/laba_5/images/image_27.png">
+                <img src="lb/laba_5/images/image_27.1.png">
             </div>
             <p class="figure">Рисунок 27</p>
 
@@ -314,8 +323,8 @@
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_28.png">
-                <img src="/lb/laba_5/images/image_28.1.png">
+                <img src="lb/laba_5/images/image_28.png">
+                <img src="lb/laba_5/images/image_28.1.png">
             </div>
             <p class="figure">Рисунок 28</p>
 
@@ -327,8 +336,8 @@
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_29.png">
-                <img src="/lb/laba_5/images/image_29.1.png">
+                <img src="lb/laba_5/images/image_29.png">
+                <img src="lb/laba_5/images/image_29.1.png">
             </div>
             <p class="figure">Рисунок 29</p>
 
@@ -337,8 +346,8 @@
                 на стеклянной части.</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_30.png">
-                <img src="/lb/laba_5/images/image_30.1.png">
+                <img src="lb/laba_5/images/image_30.png">
+                <img src="lb/laba_5/images/image_30.1.png">
             </div>
             <p class="figure">Рисунок 30</p>
 
@@ -349,7 +358,7 @@
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_31.png">
+                <img src="lb/laba_5/images/image_31.png">
             </div>
             <p class="figure">Рисунок 31</p>
 
@@ -360,7 +369,7 @@
 
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_32.png">
+                <img src="lb/laba_5/images/image_32.png">
             </div>
             <p class="figure">Рисунок 32</p>
 
@@ -368,7 +377,7 @@
                 панель "Indirect Light"</p>
 
             <div class="container_images_rows">
-                <img src="/lb/laba_5/images/image_33.png" class="glow openModal" id="openModal"
+                <img src="lb/laba_5/images/image_33.png" class="glow openModal" id="openModal"
                 data-model="3dmodel/lb_5/LB05_z02.glb">
             </div>
             <p class="figure">Рисунок 33</p>
@@ -387,7 +396,7 @@
     </div>
     <div class="footer">
         <div class="page-info-container">
-            <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+            <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
         </div>
     </div>
     </div>

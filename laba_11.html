@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">2.1 Моделирование освещения, работа с камерой</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -42,7 +51,7 @@
                     же образом себя ведет и камера. Объем объектов воспринимается только благодаря свету и тени. А тень,
                     в свою очередь, это те места, в которые попадает меньше света.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_1.3.jpg">
+                    <img src="lb/laba_11/images/image_1.3.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
 
@@ -55,7 +64,7 @@
                 <p>Смена активной камеры</p>
 
                 <div class="container_images_rows">
-                    <div class="container_images_columns"><img src="/lb/laba_11/images/image_2.jpg">
+                    <div class="container_images_columns"><img src="lb/laba_11/images/image_2.jpg">
                         <p>Активная камера (слева).</p>
                     </div>
                 </div>
@@ -73,7 +82,7 @@
                     перейдите в раздел Camera. Здесь представлены некоторые доступные настройки:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_3.jpg">
+                    <img src="lb/laba_11/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
                 <ul>
@@ -112,7 +121,7 @@
                     оранжевой обводкой).</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_4.jpg">
+                    <img src="lb/laba_11/images/image_4.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
 
@@ -120,26 +129,26 @@
                     щелчке ЛКМ (левой кнопки мыши) - фиксируем выбранный ракурс. ПКМ -отменяем изменение ракурса.
                     Приблизить и отдалить - удерживать G, ЦКМ (центральную клавишу мыши) и перемещать мышь.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_5.jpg">
+                    <img src="lb/laba_11/images/image_5.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
                 <p>Клавиша R (русская К) - поворот камеры (и также ЛКМ фиксируем, ПКМ - отменяем вращение).</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_6.jpg">
+                    <img src="lb/laba_11/images/image_6.jpg">
                 </div>
                 <p class="figure">Рисунок 6</p>
 
                 <p>При двойном нажатии R - вращение камеры .</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_7.jpg">
+                    <img src="lb/laba_11/images/image_7.jpg">
                 </div>
                 <p class="figure">Рисунок 7</p>
 
                 <p>Есть более легкий способ установки камеры: откроем панель свойств и поставим галочку напротив
                     «Привязать камеру к виду». После установки камеры галочку можно снять.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_8.jpg">
+                    <img src="lb/laba_11/images/image_8.jpg">
                 </div>
                 <p class="figure">Рисунок 8</p>
 
@@ -149,22 +158,22 @@
                 <p>При визуализации можем видеть собственную тень, падающую тень и собственно цвет кубика.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_9.jpg">
+                    <img src="lb/laba_11/images/image_9.jpg">
                 </div>
                 <p class="figure">Рисунок 9</p>
                 <p>Зададим цвет нашей плоскости:</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_10.jpg">
+                    <img src="lb/laba_11/images/image_10.jpg">
                 </div>
                 <p class="figure">Рисунок 10</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_11.jpg" class="glow openModal">
+                    <img src="lb/laba_11/images/image_11.jpg" class="glow openModal">
                 </div>
                 <p class="figure">Рисунок 11</p>
                 <p>Нажмем F12</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_12.jpg">
+                    <img src="lb/laba_11/images/image_12.jpg">
                 </div>
                 <p class="figure">Рисунок 12</p>
                 <p class="p_heading">Основные Настройки Рендера</p>
@@ -173,7 +182,7 @@
                     вашу сцену.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_13.jpg">
+                    <img src="lb/laba_11/images/image_13.jpg">
                 </div>
                 <p class="figure">Рисунок 13</p>
                 <p>Что вы хотите получить в итоге: изображение в формате .jpeg или видеоролик? Какого размера
@@ -217,7 +226,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_14.jpg">
+                    <img src="lb/laba_11/images/image_14.jpg">
                 </div>
                 <p class="figure">Рисунок 14</p>
                 <p class="p_heading">Установки Сцены (Scene)</p>
@@ -237,7 +246,7 @@
                     понадобится отключить гравитацию на панели Gravity.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_11/images/image_15.jpg">
+                    <img src="lb/laba_11/images/image_15.jpg">
                 </div>
                 <p class="figure">Рисунок 15</p>
                 <p>Параметры вывода подбираются следующим способом:</p>
@@ -278,7 +287,7 @@
                     <li>Убедитесь, что опция Anti-Aliasing включена и выбрано значение 8.</li>
 
                     <div class="container_images_rows">
-                        <img src="/lb/laba_11/images/image_16.jpg">
+                        <img src="lb/laba_11/images/image_16.jpg">
                     </div>
                     <p class="figure">Рисунок 16</p>
                     <li>На панели Shading проверьте параметры Shadows и Ray-Tracing (включены они или выключены, в
@@ -324,7 +333,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>

@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">2.1 Моделирование освещения, работа с камерой</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -54,7 +63,7 @@
                     <li>Area - Освещает большую площадь (как в классной комнате). Может быть масштабирована.</li>
                 </ul>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_1.jpg">
+                    <img src="lb/laba_10/images/image_1.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
                 <p>При использовании традиционного рендера в Blender создавать тень может только лампа Spot, однако с
@@ -69,7 +78,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_2.jpg">
+                    <img src="lb/laba_10/images/image_2.jpg">
                 </div>
                 <p class="figure">Рисунок 2</p>
                 <p>Это основные настройки. Лампы Sun и Spot будут иметь несколько отличный набор параметров. </p>
@@ -90,7 +99,7 @@
                 <p>Давайте рассмотрим параметры лампы Spot:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_3.jpg">
+                    <img src="lb/laba_10/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
                 <p>Если тени присутствуют но выглядят плохо, попробуйте увеличить значение параметра Clip Start для
@@ -98,7 +107,7 @@
                     Если же вы совсем не видите теней на отрендереном изображении, возможно, вам следует включить опцию
                     Shadow в разделе Render на панели Shading.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_4.jpg">
+                    <img src="lb/laba_10/images/image_4.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
 
@@ -113,7 +122,7 @@
                     масштабирован, чтобы имитировать стену, а между гранями стены должна висеть сфера.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_5.jpg">
+                    <img src="lb/laba_10/images/image_5.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
                 <p>Возможно, вам потребуется настроить расстояние между буквами для лучшего внешнего вида текста.</p>
@@ -127,7 +136,7 @@
                     затем необходимо проанализировать изменения, возникшие в нашей сцене.
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_6.jpg">
+                    <img src="lb/laba_10/images/image_6.jpg">
                 </div>
                 <p class="figure">Рисунок 6</p>
 
@@ -141,7 +150,7 @@
                 <p>Для преобразования текста в Меш-объект выделите его и нажмите Alt -"C".</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_7.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_10/images/image_7.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_10/LB10_miss01.glb">
                 </div>
                 <p class="figure">Рисунок 7</p>
@@ -149,7 +158,7 @@
                 <p>Поэтому давайте поставим источник света параллельно одной из плоскостей кубика и направим появившиеся
                     пунктирные линии на эту плоскость.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_8.jpg">
+                    <img src="lb/laba_10/images/image_8.jpg">
                 </div>
                 <p class="figure">Рисунок 8</p>
 
@@ -181,7 +190,7 @@
                     удалены все лампы и окружение. Единственное, почему куб светится на изображении - это опция Emit.
                     Поверхность, на которой он находится, не подсвечена.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_9.jpg" >
+                    <img src="lb/laba_10/images/image_9.jpg" >
                 </div>
                 <p class="figure">Рисунок 9</p>
                 <p>Такой эффект Blender мог создавать и раньше. Для появления эффекта ненаправленного освещения нужно
@@ -193,14 +202,14 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_10.jpg">
+                    <img src="lb/laba_10/images/image_10.jpg">
                 </div>
                 <p class="figure">Рисунок 10</p>
 
                 <p>Вы увидите параметр Factor, контролирующий степень влияния эффекта и параметр Bounce, определяющий
                     количество отражений лучей света, исходящих от объекта.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_11.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_10/images/image_11.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_10/LB10_miss02.glb">
                 </div>
                 <p class="figure">Рисунок 11</p>
@@ -220,7 +229,7 @@
                     функцию" Ray Tracing". Теперь вы сможете использовать свойства ray-tracing на ваших объектах.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_12.jpg">
+                    <img src="lb/laba_10/images/image_12.jpg">
                 </div>
                 <p class="figure">Рисунок 12</p>
                 <p>Пока вы этого не сделаете, разницы между обычным рендером и рендером с ray-tracing не будет.</p>
@@ -230,14 +239,14 @@
                     найдите большую кнопку "Ray Shadow" и нажмите ее.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_13.jpg">
+                    <img src="lb/laba_10/images/image_13.jpg">
                 </div>
                 <p class="figure">Рисунок 13</p>
                 <p>Когда вы включите ray-тени, в настройках большинства ламп появится несколько дополнительных
                     параметров. Параметр "Soft Size" влияет на мягкость границ тени, а параметр "Samples" на качества
                     тени.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_14.jpg">
+                    <img src="lb/laba_10/images/image_14.jpg">
                 </div>
                 <p class="figure">Рисунок 14</p>
 
@@ -249,8 +258,8 @@
                     как и при использовании традиционной Shadow Buffer технологии.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_15.jpg">
-                    <img src="/lb/laba_10/images/image_15.2.jpg">
+                    <img src="lb/laba_10/images/image_15.jpg">
+                    <img src="lb/laba_10/images/image_15.2.jpg">
                 </div>
                 <p class="figure">Рисунок 15</p>
                 <p>Обратите внимание на тени в иллюстрации выше. Левое изображение было отрендерено с параметром Samples
@@ -260,7 +269,7 @@
                 <p>Настройте освещение так, что бы изображение было приближены к реальности настолько, насколько это
                     возможно.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_16.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_10/images/image_16.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_10/LB10_z01.glb">
                 </div>
                 <p class="figure">Рисунок 16</p>
@@ -268,7 +277,7 @@
                 <p class="p_heading">Задание 2.</p>
                 <p>Создайте подобное изображение</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_10/images/image_17.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_10/images/image_17.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_10/LB10_z02.glb">
                 </div>
                 <p class="figure">Рисунок 17</p>
@@ -285,7 +294,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>

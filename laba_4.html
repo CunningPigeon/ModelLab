@@ -5,8 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
-    <link rel="stylesheet" href="/css/laba.css">
-    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="css/laba.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
                 <span class="right-header">1.2 Создание и преобразование объектов</span>
             </div>
             <div class="header-bottom">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
         <div class="content">
@@ -43,7 +52,7 @@
                 </p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_1.jpg">
+                    <img src="lb/laba_4/images/image_1.jpg">
                 </div>
                 <p class="figure">Рисунок 1</p>
 
@@ -55,7 +64,7 @@
                     несоединенные части меша (all loose parts).</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_2.jpg">
+                    <img src="lb/laba_4/images/image_2.jpg">
                 </div>
                 <p class="figure">Рисунок 2</p>
 
@@ -65,7 +74,7 @@
                     хотите удалить.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_3.jpg">
+                    <img src="lb/laba_4/images/image_3.jpg">
                 </div>
                 <p class="figure">Рисунок 3</p>
 
@@ -87,8 +96,8 @@
                     параметрам создания граней.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_4.jpg">
-                    <img src="/lb/laba_4/images/image_4.1.jpg">
+                    <img src="lb/laba_4/images/image_4.jpg">
+                    <img src="lb/laba_4/images/image_4.1.jpg">
                 </div>
                 <p class="figure">Рисунок 4</p>
 
@@ -113,7 +122,7 @@
                 </ol>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_5.jpg">
+                    <img src="lb/laba_4/images/image_5.jpg">
                 </div>
                 <p class="figure">Рисунок 5</p>
 
@@ -124,7 +133,7 @@
                 </ol>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_6.jpg">
+                    <img src="lb/laba_4/images/image_6.jpg">
                 </div>
                 <p class="figure">Рисунок 6</p>
 
@@ -140,8 +149,8 @@
                 </ol>
                 <ol>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_7.jpg">
-                        <img src="/lb/laba_4/images/image_7.1.jpg">
+                        <img src="lb/laba_4/images/image_7.jpg">
+                        <img src="lb/laba_4/images/image_7.1.jpg">
                     </div>
                     <li>С помощью элемента управления в нижней части окна включите режим работы с вершинами (самая левая
                         кнопка).</li>
@@ -156,7 +165,7 @@
                         верхние вершины
                         и нажмите клавишу <strong>Esc</strong>, чтобы закончить выделение.</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_8.jpg">
+                        <img src="lb/laba_4/images/image_8.jpg">
 
                     </div>
                     <p class="figure">Рисунок 8</p>
@@ -166,12 +175,12 @@
                         образующих контур. Применив масштабирование (клавиша <strong>S</strong>), уменьшите размеры
                         контура.</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_9.jpg">
+                        <img src="lb/laba_4/images/image_9.jpg">
                     </div>
                     <p class="figure">Рисунок 9</p>
                     <li>Выделите следующий контур и увеличьте его размер с помощью масштабирования.</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_10.jpg">
+                        <img src="lb/laba_4/images/image_10.jpg">
                     </div>
                     <p class="figure">Рисунок 10</p>
                 </ol>
@@ -182,7 +191,7 @@
                         выдавливание) и
                         переместите выделенную грань вниз примерно так, как на следующем рисунке.</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_11.jpg">
+                        <img src="lb/laba_4/images/image_11.jpg">
                     </div>
                     <p class="figure">Рисунок 11</p>
 
@@ -190,14 +199,14 @@
                         и
                         масштабирование, завершите построение нижней части:</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_12.jpg">
+                        <img src="lb/laba_4/images/image_12.jpg">
                     </div>
                     <p class="figure">Рисунок 12</p>
 
                     <li>Добавьте колечко, за которое такой фонарь можно подвесить – это объект <strong>Тор
                             (Torus)</strong>:</li>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_13.jpg" class="glow openModal" id="openModal"
+                        <img src="lb/laba_4/images/image_13.jpg" class="glow openModal" id="openModal"
                             data-model="3dmodel/lb_4/LB04_miss01.glb">
                     </div>
                     <p class="figure">Рисунок 13</p>
@@ -217,7 +226,7 @@
                     оно должно появиться в фоне окна 3D-вида.
                 </p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_14.jpg">
+                    <img src="lb/laba_4/images/image_14.jpg">
                 </div>
                 <p class="figure">Рисунок 14</p>
 
@@ -229,7 +238,7 @@
                     можно использовать
                     не только изображение, но и видео.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_15.jpg">
+                    <img src="lb/laba_4/images/image_15.jpg">
                 </div>
                 <p class="figure">Рисунок 15</p>
 
@@ -241,7 +250,7 @@
                     осталось только
                     3 из них.</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_16.jpg">
+                    <img src="lb/laba_4/images/image_16.jpg">
                 </div>
                 <p class="figure">Рисунок 16</p>
 
@@ -260,12 +269,12 @@
                 <div class="container_images_columns">
 
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_17.jpg">
-                        <img src="/lb/laba_4/images/image_17.1.jpg">
+                        <img src="lb/laba_4/images/image_17.jpg">
+                        <img src="lb/laba_4/images/image_17.1.jpg">
                     </div>
                     <div class="container_images_rows">
-                        <img src="/lb/laba_4/images/image_17.2.jpg">
-                        <img src="/lb/laba_4/images/image_17.3.jpg">
+                        <img src="lb/laba_4/images/image_17.2.jpg">
+                        <img src="lb/laba_4/images/image_17.3.jpg">
                     </div>
                 </div>
                 <p class="figure">Рисунок 17</p>
@@ -274,7 +283,7 @@
                     экструдировать) одну вершину (Shift + "D") и разместить ее на внутреннем контуре логотипа.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_18.jpg">
+                    <img src="lb/laba_4/images/image_18.jpg">
                 </div>
                 <p class="figure">Рисунок 18</p>
                 <p>Затем, по аналогии с внешним контуром, мы экструдируем вершину и получим внутренний контур. Здорово,
@@ -286,7 +295,7 @@
                     детали - создайте их сейчас.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_19.jpg">
+                    <img src="lb/laba_4/images/image_19.jpg">
                 </div>
                 <p class="figure">Рисунок 19</p>
                 <p>Перед тем, как мы создадим грани, нам нужно разделить группы вершин по отдельным мешам для наложения
@@ -298,7 +307,7 @@
                     меша. После отделения всех нужных элементов перейдите в Объектный Режим.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_20.jpg">
+                    <img src="lb/laba_4/images/image_20.jpg">
                 </div>
                 <p class="figure">Рисунок 20</p>
                 <p>Пришло время создать грани нашего меша. Мы можем выделять по 3-4 вершины и создавать грань между ними
@@ -310,7 +319,7 @@
                     "A"). Нажмите сочетание клавиш Ctrl + "F" и выберите в появившемся меню опцию Fill.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_21.jpg">
+                    <img src="lb/laba_4/images/image_21.jpg">
                 </div>
                 <p class="figure">Рисунок 21</p>
                 <p>Если контур сложный, не замкнутый или имеет где-то дублирующие вершины, эта опция может не работать,
@@ -326,14 +335,14 @@
                     меши для придания им нужной толщины, как вы это делали с маяком.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_22.jpg">
+                    <img src="lb/laba_4/images/image_22.jpg">
                 </div>
                 <p class="figure">Рисунок 22</p>
                 <p>Ваш логотип готов.</p>
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_23.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_4/images/image_23.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_4/LB04_miss02.glb">
                 </div>
                
@@ -342,7 +351,7 @@
 
                 <p class="p_heading">Создайте трехмерный логотип</p>
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_24.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_4/images/image_24.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_4/LB04_z01.glb">
                 </div>
                 <p class="figure">Рисунок 24</p>
@@ -350,7 +359,7 @@
                 <p class="p_heading">Булевы операции</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_25.jpg">
+                    <img src="lb/laba_4/images/image_25.jpg">
                 </div>
                 <p class="figure">Рисунок 25</p>
                 <p>Булевы операции позволяют вам вырезать отверстия или добавлять части к одному мешу, используя другой
@@ -372,7 +381,7 @@
                     Modifiers в Окне Свойств.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_26.jpg">
+                    <img src="lb/laba_4/images/image_26.jpg">
                 </div>
                 <p class="figure">Рисунок 26</p>
                 <p>Если разрешение вашего монитора не позволяет видеть сразу все закладки разделов в Окне Свойств,
@@ -385,7 +394,7 @@
 
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_27.jpg">
+                    <img src="lb/laba_4/images/image_27.jpg">
                 </div>
                 <p class="figure">Рисунок 27</p>
                 <p>На панели Boolean вы увидите поле, в котором можно выбрать объект, которым вы хотите модифицировать
@@ -393,13 +402,13 @@
                     изменение формы куба.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_28.jpg">
+                    <img src="lb/laba_4/images/image_28.jpg">
                 </div>
                 <p class="figure">Рисунок 28</p>
                 <p>Ниже вы можете увидеть результаты применения различных вариантов Булевых операций:</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_29.jpg">
+                    <img src="lb/laba_4/images/image_29.jpg">
                 </div>
                 <p class="figure">Рисунок 29</p>
                 <ul class="list">
@@ -410,8 +419,8 @@
                 <p>При нажатии кнопки "Apply" произойдет фиксация новой формы Куба, и Сферу можно будет удалить.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_30.jpg">
-                    <img src="/lb/laba_4/images/image_30.1.jpg">
+                    <img src="lb/laba_4/images/image_30.jpg">
+                    <img src="lb/laba_4/images/image_30.1.jpg">
                 </div>
                 <p class="figure">Рисунок 30</p>
 
@@ -430,7 +439,7 @@
                     вы можете изменить имя объекта на Панели Трансформаций.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_31.jpg">
+                    <img src="lb/laba_4/images/image_31.jpg">
                 </div>
                 <p class="figure">Рисунок 31</p>
 
@@ -439,7 +448,7 @@
                     "Z"). На панели модификатора из выпадающего меню доступных модификаторов выберите Boolean.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_32.jpg">
+                    <img src="lb/laba_4/images/image_32.jpg">
                 </div>
                 <p class="figure">Рисунок 32</p>
 
@@ -448,7 +457,7 @@
                     вы должны увидеть отверстие в Маяке, размером как раз с куб. Нажмите кнопку "Apply".</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_33.jpg">
+                    <img src="lb/laba_4/images/image_33.jpg">
                 </div>
                 <p class="figure">Рисунок 33</p>
                 <p>Теперь вы можете переместить куб на новое место выреза и добавить еще один модификатор Boolean,
@@ -458,7 +467,7 @@
                 <p>Задание завершено.</p>
 
                 <div class="container_images_rows">
-                    <img src="/lb/laba_4/images/image_34.jpg" class="glow openModal" id="openModal"
+                    <img src="lb/laba_4/images/image_34.jpg" class="glow openModal" id="openModal"
                         data-model="3dmodel/lb_4/LB04_z02.glb">
                 </div>
                 <p class="figure">Рисунок 34</p>
@@ -475,7 +484,7 @@
         </div>
         <div class="footer">
             <div class="page-info-container">
-                <a href="/index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
+                <a href="index.html" class="toc-link" onclick="showTableOfContents()">Содержание</a>
             </div>
         </div>
     </div>
