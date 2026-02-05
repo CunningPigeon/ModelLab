@@ -15,7 +15,20 @@ function init() {
     camera.position.set(0, 1.5, 4);
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
+    // renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
+    //
+    const container = document.getElementById('container');
+
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    container.appendChild(renderer.domElement);
+
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+    //
+
+
     renderer.outputEncoding = THREE.sRGBEncoding;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -54,8 +67,8 @@ function init() {
     controls.dampingFactor = 0.15;
     controls.maxPolarAngle = Math.PI / 2;
 
-    controls.minDistance = 2; 
-    controls.maxDistance = 40; 
+    controls.minDistance = 2;
+    controls.maxDistance = 40;
 
 
     controls.mouseButtons = {
@@ -176,227 +189,15 @@ function animate() {
 }
 
 window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    const container = document.getElementById('container');
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    camera.aspect = width / height;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
+    renderer.setSize(width, height);
 });
 
 init();
 
 
-
-
-
-
-/*import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-
-let scene, camera, renderer, model, controls;
-let mixer, clock = new THREE.Clock();
-
-function init() {
-    scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth / 1.7, window.innerHeight / 1.7);
-    renderer.shadowMap.enabled = false;
-    document.getElementById('container').appendChild(renderer.domElement);
-
-    // Свет
-    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-    const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight1.position.set(1, 1, 1).normalize();
-    scene.add(directionalLight1);
-    const directionalLight2 = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight2.position.set(-1, -1, -1).normalize();
-    scene.add(directionalLight2);
-    const directionalLight3 = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight3.position.set(1, -1, -1).normalize();
-    scene.add(directionalLight3);
-
-    // Камера и управление
-    camera.position.set(0, 1, 5);
-    controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.25;
-    controls.screenSpacePanning = false;
-    controls.maxPolarAngle = Math.PI / 2;
-
-    // Клик по миниатюрам
-    document.querySelectorAll('.openModal').forEach(image => {
-        image.addEventListener('click', () => {
-            const modelName = image.getAttribute('data-model');
-            loadModel(modelName);
-            document.getElementById('modal').style.display = 'block';
-        });
-    });
-
-    // Закрытие модального окна
-    document.getElementById('closeModal').addEventListener('click', () => {
-        document.getElementById('modal').style.display = 'none';
-        if (model) {
-            scene.remove(model);
-            model = null;
-            mixer = null;
-        }
-    });
-
-    // Клик для запуска анимации
-    renderer.domElement.addEventListener('click', () => {
-        if (mixer && mixer._actions.length > 0) {
-            mixer._actions.forEach(action => {
-                action.reset().play();
-            });
-        }
-    });
-
-    animate();
-}
-
-function loadModel(modelName) {
-    const modelPath = `3dmodel/${modelName}`;
-    const loader = new GLTFLoader();
-    loader.load(modelPath, (gltf) => {
-        if (model) {
-            scene.remove(model);
-        }
-        model = gltf.scene;
-        scene.add(model);
-
-        // Удаляем старый миксер и создаём новый
-        mixer = new THREE.AnimationMixer(model);
-
-        // Добавляем все анимации
-        gltf.animations.forEach(clip => {
-            const action = mixer.clipAction(clip);
-            action.clampWhenFinished = true;
-            action.loop = THREE.LoopOnce;
-        });
-
-    }, undefined, (error) => {
-        console.error('Ошибка загрузки модели:', error);
-    });
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-
-    const delta = clock.getDelta();
-    if (mixer) mixer.update(delta);
-
-    controls.update();
-    renderer.render(scene, camera);
-}
-
-window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
-});
-
-init();
-
-
-
-
-
-
-/*import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-
-let scene, camera, renderer, model, controls;
-
-function init() {
-    scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth / 1.7, window.innerHeight / 1.7);
-    renderer.shadowMap.enabled = false; // Отключаем тени в рендерере
-
-    document.getElementById('container').appendChild(renderer.domElement);
-
-    // Добавление освещения
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Мягкий свет
-    scene.add(ambientLight);
-
-    // Направленный свет
-    const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight1.position.set(1, 1, 1).normalize();
-    directionalLight1.castShadow = false; // Отключаем тени для первого источника света
-    scene.add(directionalLight1);
-
-    const directionalLight2 = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight2.position.set(-1, -1, -1).normalize();
-    directionalLight2.castShadow = false; // Отключаем тени для второго источника света
-    scene.add(directionalLight2);
-
-    const directionalLight3 = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight3.position.set(1, -1, -1).normalize();
-    directionalLight3.castShadow = false; // Отключаем тени для третьего источника света
-    scene.add(directionalLight3);
-
-    // Установка позиции камеры
-    camera.position.set(0, 1, 5); // Позиция камеры
-
-    // Добавление управления камерой
-    controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true; // Увеличивает плавность вращения
-    controls.dampingFactor = 0.25; // Параметр сглаживания
-    controls.screenSpacePanning = false; // Запрет панорамирования в пространстве экрана
-    controls.maxPolarAngle = Math.PI / 2; // Ограничение угла наклона камеры
-
-   // Обработчик для открытия модального окна
-   const openModalImages = document.querySelectorAll('.openModal');
-   openModalImages.forEach(image => {
-       image.addEventListener('click', () => {
-           const modelName = image.getAttribute('data-model'); // Получаем имя модели из атрибута
-           loadModel(modelName); // Загружаем модель
-           document.getElementById('modal').style.display = 'block'; // Показываем модальное окно
-       });
-   });
-
-   // Обработчик для закрытия модального окна
-   document.getElementById('closeModal').addEventListener('click', () => {
-       document.getElementById('modal').style.display = 'none'; // Скрываем модальное окно
-       if (model) {
-           scene.remove(model); // Удаляем модель из сцены
-           model = null; // Сбрасываем модель
-       }
-   });
-
-    animate();
-}
-
-function loadModel(modelName) {
-    const modelPath = `3dmodel/${modelName}`; // Формируем путь к модели
-    const loader = new GLTFLoader();
-    loader.load(modelPath, (gltf) => {
-        if (model) {
-            scene.remove(model); // Удаляем предыдущую модель
-        }
-        model = gltf.scene;
-        scene.add(model);
-    }, undefined, (error) => {
-        console.error('Ошибка загрузки модели:', error);
-    });
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-    if (model) {
-        model.rotation.y += 0.00; // Вращение модели
-    }
-    controls.update(); // Обновление управления
-    renderer.render(scene, camera);
-}
-
-window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
-});
-
-init();
-*/
