@@ -28,11 +28,11 @@ function init() {
     camera.updateProjectionMatrix();
     //
 
-
+/*
     renderer.outputEncoding = THREE.sRGBEncoding;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    document.getElementById('container').appendChild(renderer.domElement);
+    document.getElementById('container').appendChild(renderer.domElement);*/
 
     // Окружающее освещение с HDR-картой
     new RGBELoader().load('env.hdr', (hdrEquirect) => {
@@ -188,26 +188,15 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener('resize', () => {
+    /* const container = document.getElementById('container');
+    const width = container.clientWidth;
+    const height = container.clientHeight;
 
-    var modal = document.getElementById("modal");
-    var btn = document.getElementById("openModal");
-    var span = document.getElementById("closeModal");
-
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
+    camera.aspect = width / height; */
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
 });
 
 init();
