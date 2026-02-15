@@ -188,15 +188,26 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-window.addEventListener('resize', () => {
-    /* const container = document.getElementById('container');
-    const width = container.clientWidth;
-    const height = container.clientHeight;
+document.addEventListener("DOMContentLoaded", function() {
 
-    camera.aspect = width / height; */
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(width, height);
+    var modal = document.getElementById("modal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementById("closeModal");
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
 });
 
 init();
