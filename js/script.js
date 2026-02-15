@@ -15,8 +15,8 @@ function init() {
     camera.position.set(0, 1.5, 4);
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
-    // renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
-    //
+    renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
+    
     const container = document.getElementById('container');
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -189,11 +189,12 @@ function animate() {
 }
 
 window.addEventListener('resize', () => {
-    const container = document.getElementById('container');
+    /* const container = document.getElementById('container');
     const width = container.clientWidth;
     const height = container.clientHeight;
 
-    camera.aspect = width / height;
+    camera.aspect = width / height; */
+    camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(width, height);
 });
