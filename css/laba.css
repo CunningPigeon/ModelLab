@@ -122,6 +122,8 @@ li {
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
     margin: 10px; /* Убираем отступы */
+    max-width: 90%;
+    max-height: 90%;
 }
 .container_images_column {
     display: flex; /* Используем Flexbox*/
